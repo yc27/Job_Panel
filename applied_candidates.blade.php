@@ -1,0 +1,1 @@
+applied_candidates.blade.php
