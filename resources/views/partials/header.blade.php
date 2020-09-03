@@ -10,8 +10,8 @@
             <div class="menues">
                 <ul>
                     <li><a href="/home">home</a></li>
-                    <li><a href="/jobs">jobs</a></li>
-                    <li><a href="/create_resume">employee</a></li>
+                    <li><a href="/jobseeker/create-resume">jobseeker</a></li>
+                    <li><a href="/employer/create-company">employeer</a></li>
                 </ul>
             </div>
             <div class="menu_login_area">

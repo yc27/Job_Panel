@@ -13,13 +13,8 @@
 <!-- Start Edit Resume -->
 <div class="job_details_area">
     <div class="container-fluid">
-        <div class="row no-gutters">
-            <div class="col-md-2">
-                <div class="view_left">
-                    @include('users.employer.partials.sidebar')
-                </div>
-            </div>
-            <div class="col-md-10">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
                 <div class="edit_resume_area">
                     <div class="container">
                         <div class="tab-content" id="myTabContent">
@@ -49,10 +44,22 @@
                                         <label>Facebook ID </label>
                                         <input type="text">
                                     </div>
+                                    <div class="form-group">
+                                        <label>Username *</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Password *</label>
+                                        <input type="password">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Retype Password *</label>
+                                        <input type="password">
+                                    </div>
                                 </div>
                             </div>
                             <div class="job_apply">
-                                <p><a href="#">Update</a></p>
+                                <p><a href="#">Register</a></p>
                             </div>
                         </div>
                     </div>

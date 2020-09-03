@@ -48,6 +48,10 @@ Route::group(['prefix' => '/jobseeker'], function () {
 });
 
 Route::group(['prefix' => '/employer'], function () {
+    Route::get('/create-company', function () {
+        return view('users.employer.create_company');
+    });
+    
     Route::get('/edit-company', function () {
         return view('users.employer.edit_company');
     });
