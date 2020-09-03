@@ -28,11 +28,10 @@
 
     <!-- LinkUp Js -->
     <script type="text/javascript" src="{{ asset('/admin/assets/js/jquery-1.12.4.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('/admin/assets/js/bootstrap.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('/admin/assets/js/popper.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('/admin/assets/js/bootstrap.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('/admin/assets/js/owl.carousel.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('/admin/assets/js/owl.carousel2.thumbs.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('/admin/assets/js/jquery.scrollUp.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('/admin/assets/js/active.js') }}"></script>
 
 </body>
