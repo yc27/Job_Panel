@@ -12,45 +12,51 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Route::get('/', function () {
-    return view('admin.home.home');
+    return view('home');
 });
+
 Route::get('/home', function () {
-    return view('admin.home.home');
+    return view('home');
 });
+
 Route::get('/jobs', function () {
-    return view('admin.jobs');
+    return view('jobs');
 });
-Route::get('/create_resume', function () {
-    return view('admin.create_resume');
+
+Route::get('/jobs/job-details', function () {
+    return view('job_details');
 });
-Route::get('/job_details', function () {
-    return view('admin.job_details'); 
+
+Route::group(['prefix' => '/jobseeker'], function () {
+    Route::get('/create-resume', function () {
+        return view('users.jobseeker.create_resume');
+    });
+
+    Route::get('/view-resume', function () {
+        return view('users.jobseeker.view_resume');
+    });
+
+    Route::get('/edit-resume', function () {
+        return view('users.jobseeker.edit_resume');
+    });
+
+    Route::get('/applied-jobs', function () {
+        return view('users.jobseeker.applied_jobs');
+    });
 });
-Route::get('/applied_jobs', function () {
-    return view('admin.applied_jobs');
-});
-Route::get('/edit_resume', function () {
-    return view('admin.edit_resume');
-});
-Route::get('/view_resume', function () {
-    return view('admin.view_resume');
-});
-Route::get('/admin/dashboard', function () {
-    return view('admin.dashboard');
-});
-Route::get('/jobseeker/dashboard', function () {
-    return view('jobseeker.edit_profile');
-});
-Route::get('/employer/edit_company', function () {
-    return view('employer.edit_company');
-});
-Route::get('/employer/applied_candidates', function () {
-    return view('employer.applied_candidates');
-});
-Route::get('/employer/job_post', function () {
-    return view('employer.job_post');
-});
-Route::get('/job_post', function () {
-    return view('post_job');
+
+Route::group(['prefix' => '/employer'], function () {
+    Route::get('/edit-company', function () {
+        return view('users.employer.edit_company');
+    });
+
+    Route::get('/post-job', function () {
+        return view('users.employer.post_job');
+    });
+
+    Route::get('/applied-candidates', function () {
+        return view('users.employer.applied_candidates');
+    });
 });
